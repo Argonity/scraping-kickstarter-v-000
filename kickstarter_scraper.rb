@@ -20,7 +20,11 @@ def create_project_hash
       :image_link => project.css("div.project-thumbnail a img").attribute("src").value,
       :description => project.css("p.bbcard_blurb").text,
       :location => project.css("ul.project-meta span.location-name").text,
+<<<<<<< HEAD
       :percent_funded => project.css("ul.project-stats li.first.funded strong").text.gsub("%","").to_i
+=======
+      :percent_funded => project.css("ul.project-stats li.first.funded strong").text.gsub("%","").to_i      
+>>>>>>> 8763c25eda4d00347e2d1ffa70b8d6fb51582116
     }
   end
   projects
